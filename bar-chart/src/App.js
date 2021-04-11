@@ -1,6 +1,5 @@
 import Form from './components/Form';
 import Graph from './components/Graph';
-
 import CanvasJSReact from './assets/canvasjs.react';
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
