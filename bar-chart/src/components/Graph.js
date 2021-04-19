@@ -1,21 +1,31 @@
+import Chart from 'chart.js/auto';
+
 const Graph = () => {
-  const options = {
-    title: {
-      text: "Basic Column Chart in React"
-    },
-    data: [{				
-              type: "column",
-              dataPoints: [
-                  { label: "Apple",  y: 10  },
-                  { label: "Orange", y: 15  },
-                  { label: "Banana", y: 25  },
-                  { label: "Mango",  y: 30  },
-                  { label: "Grape",  y: 28  }
-              ]
-     }]
- }
+  var ctx = document.getElementById('myChart').getContext('2d');
+      var chart = new Chart(ctx, {
+      // The type of chart we want to create
+      type: 'line',
+
+      // The data for our dataset
+      data: {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [{
+            label: "My First dataset",
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [0, 10, 5, 2, 20, 30, 45],
+        }]
+      },
+
+      // Configuration options go here
+      options: {}
+      });
+
   return (
     <article class="container">
+      <canvas
+        id="myChart"
+      />
     </article>
   )
 }
