@@ -1,6 +1,3 @@
-import CanvasJSReact from '../assets/canvasjs.react';
-const CanvasJSChart = CanvasJSReact.CanvasJSChart;
-
 const Graph = () => {
   const options = {
     title: {
@@ -19,7 +16,6 @@ const Graph = () => {
  }
   return (
     <article class="container">
-      <CanvasJSChart options = {options} />
     </article>
   )
 }
