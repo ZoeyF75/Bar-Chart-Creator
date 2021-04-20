@@ -1,12 +1,12 @@
 import Chart from 'chart.js/auto';
 
 const Graph = () => {
-  var ctx = document.getElementById('myChart').getContext('2d');
-      var chart = new Chart(ctx, {
-      // The type of chart we want to create
+  return (
+    <article class="container">
+      <canvas id="myChart"></canvas>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+      {/* <script>{new Chart(document.getElementById('myChart').getContext('2d'), {
       type: 'line',
-
-      // The data for our dataset
       data: {
         labels: ["January", "February", "March", "April", "May", "June", "July"],
         datasets: [{
@@ -16,16 +16,8 @@ const Graph = () => {
             data: [0, 10, 5, 2, 20, 30, 45],
         }]
       },
-
-      // Configuration options go here
       options: {}
-      });
-
-  return (
-    <article class="container">
-      <canvas
-        id="myChart"
-      />
+      })}</script> */}
     </article>
   )
 }
