@@ -5,7 +5,7 @@ const Graph = () => {
     <article class="container">
       <canvas id="myChart"></canvas>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-      {/* <script>{new Chart(document.getElementById('myChart').getContext('2d'), {
+      <script>{new Chart(document.getElementById('myChart').getContext('2d'), {
       type: 'line',
       data: {
         labels: ["January", "February", "March", "April", "May", "June", "July"],
@@ -17,7 +17,7 @@ const Graph = () => {
         }]
       },
       options: {}
-      })}</script> */}
+      })}</script>
     </article>
   )
 }
